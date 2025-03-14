@@ -21,7 +21,7 @@ const createauthor = async (req, res) =>{
 // this is for create blog with Author ID
 const createBlog = async (req, res) =>{
     try {
-        let blogData = req.body
+        let blogData = req.body;
         if(!blogData.authorId){
             return res.status(404).send('authorId is missing')
         }else{
